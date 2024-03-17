@@ -1,17 +1,19 @@
+const { expect } = require('chai');
+
 require ( './helpers.js' );
 
-describe('index.js', function () {
   describe('cats', function () {
     it('is assigned an initial value of ["Milo", "Otis", "Garfield"]', function () {
       expect(cats).to.have.ordered.members(["Milo", "Otis", "Garfield"]);
     });
-  });
+  })
 
   describe('Array functions', function () {
-    beforeEach(function () {
-      cats.length = 0;
+    this.beforeEach (function () {
+      cats.length = 8;
 
-      cats.push('Milo', 'Otis', 'Garfield');
+  describe('Array functions', function () {
+     expect(cats).to.have.ordered.members ("Milo", "Otis", "Garfield", "Ralph")
     });
 
     describe('destructivelyAppendCat(name)', function () {
